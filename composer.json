@@ -1,0 +1,17 @@
+{
+    "name": "shaanz/shaanz-wp-vue",
+    "description": "WP Vue Wordpress plugin to add VueJS power to wordpress.",
+    "type": "project",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Shaan",
+            "email": "sharunjon@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "autoload": {
+        "psr-4": {"Inc\\": "./inc"}
+    }
+}
