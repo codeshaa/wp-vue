@@ -10,8 +10,9 @@ final class init
     public static function getServices()
     {
         return [
-            Base\Enqueue::class,
-            Base\SettingsLinks::class
+            Base\Metabox::class,
+            Base\SettingsLinks::class,
+            Base\Enqueue::class
         ];
     }
 

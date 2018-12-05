@@ -31,21 +31,23 @@ use Inc\Base\Deactivate;
 use Inc\Base\Enqueue;
 
 
-
+// Plugin activation function
 function activate_shaanz_wp_vue_plugin()
 {
     Activate::activate();
 }
 
+
+// Plugin deactivation function
 function deactivate_shaanz_wp_vue_plugin()
 {
     Deactivate::deactivate();
 }
 
-//activation
+// Plugin activation
 register_activation_hook( __FILE__ , 'activate_shaanz_wp_vue_plugin' );
 
-//deactivation
+// Plugin deactivation
 register_deactivation_hook( __FILE__ , 'deactivate_shaanz_wp_vue_plugin' );
 
 
