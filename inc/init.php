@@ -12,7 +12,8 @@ final class init
         return [
             Base\Metabox::class,
             Base\SettingsLinks::class,
-            Base\Enqueue::class
+            Base\Enqueue::class,
+            Base\SettingsPage::class
         ];
     }
 
