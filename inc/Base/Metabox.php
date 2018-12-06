@@ -42,7 +42,7 @@ class Metabox
         </div> -->
 
         <div class="shaanz-wp-vue-load">
-            <label><?php _e('Load VueJS version:'); ?></label>
+            <label><?php _e('Load VueJS :'); ?></label>
              <select name="_is_vue_load" id="is-vue-load">
                 <option value="none" <?php selected($post_meta_val, "none" ) ?> > None</option>
                 <option value="dev" <?php selected($post_meta_val, "dev" ) ?> > Development</option>
