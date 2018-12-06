@@ -6,7 +6,7 @@
 /*
 Plugin Name:  WP Vue
 Description:  WP Vue adds the power of VueJS to Wordpress. This plugin loads the VueJS script to the page that you want.
-Version:      0.0.1
+Version:      0.1.5
 Author:       Sharun John
 Author URI:   https://shaa.nz
 License:      GPLv3 or later
