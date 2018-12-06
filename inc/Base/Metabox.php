@@ -64,7 +64,7 @@ class Metabox
 
         // Verify that the nonce is valid.
         if ( ! wp_verify_nonce( $_POST['vue_load_nonce'], 'vue_load_nonce' ) ) 
-        {
+        { 
             return;
         }
 
