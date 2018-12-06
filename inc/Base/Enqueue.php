@@ -19,9 +19,13 @@ final class Enqueue
 
         $post_meta_val = get_post_meta( $post->ID, '_is_vue_load', true );
 
-        if( $post_meta_val == '1' )
+        if( $post_meta_val == 'dev' )
         {
-            wp_enqueue_script( 'vuejs' , 'https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js' , array(), '', true );
+            wp_enqueue_script( 'vuejs-dev' , 'https://cdn.jsdelivr.net/npm/vue/dist/vue.js' , array(), '', true );
+        }
+        elseif( $post_meta_val == 'prod' )
+        {
+            wp_enqueue_script( 'vuejs-prod' , 'https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js' , array(), '', true );
         }
 
     }

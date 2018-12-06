@@ -35,11 +35,19 @@ class Metabox
 
         ?>
 
-        <div class="shaanz-wp-vue-load">
+        <!-- <div class="shaanz-wp-vue-load">
             <label>
-                <input type="checkbox" value="1" name="_is_vue_load" id="is-vue-load" <?php checked( $post_meta_val , true, true ); ?> />
-                <?php _e('Load VuejS Script'); ?>
+                <input type="checkbox" value="1" name="_is_vue_load" id="is-vue-load" <?php //checked( $post_meta_val , true, true ); ?> />
             </label>
+        </div> -->
+
+        <div class="shaanz-wp-vue-load">
+            <label><?php _e('Load VueJS in:'); ?></label>
+             <select name="_is_vue_load" id="is-vue-load">
+                <option value="none" <?php selected($post_meta_val, "none" ) ?> > None</option>
+                <option value="dev" <?php selected($post_meta_val, "dev" ) ?> > Development</option>
+                <option value="prod" <?php selected($post_meta_val, "prod" ) ?> > Production</option>
+            </select>       
         </div>
         
         <?php
