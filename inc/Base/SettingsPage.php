@@ -1,17 +1,24 @@
 <?php
 /**
+ * @author Sharun John <sharun@gmail.com>
  * @package ShaanzWPVue
+ * @license GPLv3
+ * @version 0.1.7
  */
 
 namespace Inc\Base;
 
+// SettingsPage Class
 class SettingsPage
 {
+
+    // Register method to add action on admin menu
     public function register()
     {
         add_action( 'admin_menu', array( $this, 'addVueSettingsMenu') , 9 );
     }
 
+    // Method to add submenu page under settings for Vue options
     public function addVueSettingsMenu()
     {
         add_submenu_page(
@@ -27,7 +34,9 @@ class SettingsPage
 	    add_action( 'admin_init', array( $this, 'registerVueSettingsPage') );
 
     }
+    
 
+    // Registering Vue settings page
     public function registerVueSettingsPage()
     {
         //register settings
@@ -35,6 +44,7 @@ class SettingsPage
     }
 
 
+    // Method that provides content for Vue settings page
     public function vueSettingsPageContent(){
 
        $get_vue_env_option =  get_option( 'is_vue_load_env_option' );

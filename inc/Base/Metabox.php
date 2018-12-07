@@ -1,13 +1,17 @@
 <?php
 /**
+ * @author Sharun John <sharun@gmail.com>
  * @package ShaanzWPVue
+ * @license GPLv3
+ * @version 0.1.7
  */
 
 namespace Inc\Base;
 
-
+// Metabox Class
 class Metabox
 {
+    // Registering Metaboxes to show vue settings fields
     public function register()
     {
         add_action( 'add_meta_boxes', array( $this, 'vueMetabox') );
@@ -15,6 +19,7 @@ class Metabox
 
     }
 
+    // Method to show Vue Metabox on all post types
     public function vueMetabox() {
 
         $screens = get_post_types();
@@ -26,6 +31,8 @@ class Metabox
         
     }
 
+
+    // Method that defines the field for setting Vue Metabox
     function vueMetaboxFields( $post )
     {
         // Add a nonce field so we can check for it later.
@@ -34,13 +41,7 @@ class Metabox
         $post_meta_val = get_post_meta( $post->ID, '_is_vue_load', true );
 
         ?>
-
-        <!-- <div class="shaanz-wp-vue-load">
-            <label>
-                <input type="checkbox" value="1" name="_is_vue_load" id="is-vue-load" <?php //checked( $post_meta_val , true, true ); ?> />
-            </label>
-        </div> -->
-
+        <!-- HTML Select Option for selecting dev / production version -->
         <div class="shaanz-wp-vue-load">
             <label><?php _e('Load VueJS :'); ?></label>
              <select name="_is_vue_load" id="is-vue-load">
@@ -54,6 +55,8 @@ class Metabox
 
     }
 
+
+    // Method to save metabox field data which is selected
     function saveVueMetaboxFieldsData( $post_id )
     {
         // Check if nonce is set.

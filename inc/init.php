@@ -1,12 +1,17 @@
 <?php
 /**
+ * @author Sharun John <sharun@gmail.com>
  * @package ShaanzWPVue
+ * @license GPLv3
+ * @version 0.1.7
  */
 
 namespace Inc;
 
+// Initialisation class
 final class init
 {
+    // Mthod to return array of classes to be initialised
     public static function getServices()
     {
         return [
@@ -17,6 +22,7 @@ final class init
         ];
     }
 
+    // Method to instanciate classes and calls register method if it has any.
     public static function registerServices()
     {
         foreach ( self::getServices() as $class )
@@ -28,6 +34,7 @@ final class init
         }
     }
 
+    // Method for initialising class
     public static function instantiate( $class )
     {
         $service = new $class();
