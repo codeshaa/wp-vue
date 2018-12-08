@@ -27,4 +27,4 @@ Now you will see option to add VueJS to the page settings for each page.
 MIT
 
 ##### For more:
-[SHAA.NZ](https://shaa.nz)
+[SHAANZ.COM](https://shaanz.com)

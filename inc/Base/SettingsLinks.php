@@ -3,7 +3,7 @@
  * @author Sharun John <sharun@gmail.com>
  * @package ShaanzWPVue
  * @license GPLv3
- * @version 0.2.1
+ * @version 0.2.2
  */
 
 namespace Inc\Base;
@@ -29,7 +29,7 @@ class SettingsLinks{
     // Method to add an about link to the plugin on activation
     public function aboutLink( $links ) {
 
-		$author_link = '<a href="https://shaa.nz">About</a>';
+		$author_link = '<a href="https://shaanz.com">About</a>';
 		array_push( $links, $author_link );
 		return $links;
     }

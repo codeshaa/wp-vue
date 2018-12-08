@@ -3,13 +3,13 @@
  * @author Sharun John <sharun@gmail.com>
  * @package ShaanzWPVue
  * @license GPLv3
- * @version 0.2.1
+ * @version 0.2.2
  */
 
 /*
 Plugin Name:  WP Vue by Shaanz
 Description:  WP Vue adds the power of VueJS to Wordpress. This plugin loads the VueJS script to the page that you want.
-Version:      0.2.1
+Version:      0.2.2
 Author:       Sharun John
 Author URI:   https://shaa.nz
 License:      GPLv3 or later
