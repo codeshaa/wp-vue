@@ -3,18 +3,17 @@
  * @author Sharun John <sharun@gmail.com>
  * @package ShaanzWPVue
  * @license GPLv3
- * @version 0.1.7
+ * @version 0.2.1
  */
 
 namespace Inc\Base;
 
 // Deactivation Class
-class Deactivate
-{
+class Deactivate {
 
     // Method that runs when plugin deactivation
-    public static function deactivate()
-    {
+    public static function deactivate(){
+
         flush_rewrite_rules();
     }
 }

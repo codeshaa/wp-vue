@@ -3,7 +3,7 @@
  * @author Sharun John <sharun@gmail.com>
  * @package ShaanzWPVue
  * @license GPLv3
- * @version 0.1.7
+ * @version 0.2.1
  */
 
 namespace Inc;

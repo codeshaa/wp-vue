@@ -3,17 +3,17 @@
  * @author Sharun John <sharun@gmail.com>
  * @package ShaanzWPVue
  * @license GPLv3
- * @version 0.1.7
+ * @version 0.2.1
  */
 
 namespace Inc\Base;
 
 // Activation Class
-class Activate
-{
+class Activate{
+    
     // Method that runs during plugin activation
-    public static function activate()
-    {
+    public static function activate(){
+
         flush_rewrite_rules();
     }
 }
