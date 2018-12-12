@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Inc\\' => array($baseDir . '/inc'),
+    'Shaanz_WP_Vue_Inc\\' => array($baseDir . '/inc'),
 );

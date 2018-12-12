@@ -27,9 +27,9 @@ if ( file_exists( dirname( __FILE__ ) . '/vendor/autoload.php' ) ) {
 // Define CONSTANTS
 define( 'SHAANZ_VUE_PLUGIN_NAME', plugin_basename( __FILE__ ) );
 
-use Inc\Base\Shaanz_WP_Vue_Activate;
-use Inc\Base\Shaanz_WP_Vue_Deactivate;
-use Inc\Base\Shaanz_WP_Vue_Enqueue;
+use Shaanz_WP_Vue_Inc\Base\Shaanz_WP_Vue_Activate;
+use Shaanz_WP_Vue_Inc\Base\Shaanz_WP_Vue_Deactivate;
+use Shaanz_WP_Vue_Inc\Base\Shaanz_WP_Vue_Enqueue;
 
 
 // Plugin activation function
@@ -55,9 +55,9 @@ register_deactivation_hook( __FILE__ , 'deactivate_shaanz_wp_vue_plugin' );
 /**
  * Initializing all the core classes of the plugin
  */
-if(class_exists( 'Inc\\Shaanz_WP_Vue_Init' ) )
+if(class_exists( 'Shaanz_WP_Vue_Inc\\Shaanz_WP_Vue_Init' ) )
 {
-    Inc\Shaanz_WP_Vue_Init::registerServices();
+    Shaanz_WP_Vue_Inc\Shaanz_WP_Vue_Init::registerServices();
 }
 
 ?>

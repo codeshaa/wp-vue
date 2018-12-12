@@ -6,7 +6,7 @@
  * @version 0.2.4
  */
 
-namespace Inc\Base;
+namespace Shaanz_WP_Vue_Inc\Base;
 
 // Activation Class
 class Shaanz_WP_Vue_Activate{

@@ -3,10 +3,10 @@
  * @author Sharun John <sharun@gmail.com>
  * @package ShaanzWPVue
  * @license GPLv3
- * @version 0.2.2
+ * @version 0.2.4
  */
 
-namespace Inc;
+namespace Shaanz_WP_Vue_Inc;
 
 // Initialisation class
 final class Shaanz_WP_Vue_Init
