@@ -9,7 +9,7 @@
 namespace Inc\Base;
 
 // Metabox Class
-class Metabox{
+class Shaanz_WP_Vue_Metabox{
 
     // Registering Metaboxes to show vue settings fields
     public function register(){

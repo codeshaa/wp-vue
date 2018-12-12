@@ -9,7 +9,7 @@
 namespace Inc\Base;
 
 // Enqueue Class for enqueuing scripts
-final class Enqueue {
+final class Shaanz_WP_Vue_Enqueue {
 
     // Registering method to enqueue scripts
     public function register(){

@@ -9,7 +9,7 @@
 namespace Inc\Base;
 
 // SettingsPage Class
-class SettingsPage{
+class Shaanz_WP_Vue_SettingsPage{
 
     // Register method to add action on admin menu
     public function register(){

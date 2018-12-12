@@ -9,16 +9,16 @@
 namespace Inc;
 
 // Initialisation class
-final class init
+final class Shaanz_WP_Vue_Init
 {
     // Mthod to return array of classes to be initialised
     public static function getServices()
     {
         return [
-            Base\Metabox::class,
-            Base\SettingsLinks::class,
-            Base\Enqueue::class,
-            Base\SettingsPage::class
+            Base\Shaanz_WP_Vue_Metabox::class,
+            Base\Shaanz_WP_Vue_SettingsLinks::class,
+            Base\Shaanz_WP_Vue_Enqueue::class,
+            Base\Shaanz_WP_Vue_SettingsPage::class
         ];
     }
 

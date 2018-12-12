@@ -9,7 +9,7 @@
 namespace Inc\Base;
 
 // Settings Links Class
-class SettingsLinks{
+class Shaanz_WP_Vue_SettingsLinks{
     
     // Class variable to get plugin name
     protected $plugin;
@@ -17,7 +17,7 @@ class SettingsLinks{
     // Construcotor that sets plugin name variable
     public function __construct(){
         
-        $this->plugin = PLUGIN;
+        $this->plugin = SHAANZ_VUE_PLUGIN_NAME;
     }
 
     // Method to add filter on plugin adtion links

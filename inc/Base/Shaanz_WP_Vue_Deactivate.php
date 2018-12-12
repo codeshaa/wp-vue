@@ -8,11 +8,11 @@
 
 namespace Inc\Base;
 
-// Activation Class
-class Activate{
-    
-    // Method that runs during plugin activation
-    public static function activate(){
+// Deactivation Class
+class Shaanz_WP_Vue_Deactivate {
+
+    // Method that runs when plugin deactivation
+    public static function deactivate(){
 
         flush_rewrite_rules();
     }

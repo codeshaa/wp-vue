@@ -3,15 +3,15 @@
  * @author Sharun John <sharun@gmail.com>
  * @package ShaanzWPVue
  * @license GPLv3
- * @version 0.2.2
+ * @version 0.2.4
  */
 
 /*
 Plugin Name:  WP Vue by Shaanz
 Description:  WP Vue adds the power of VueJS to Wordpress. This plugin loads the VueJS script to the page that you want.
-Version:      0.2.2
+Version:      0.2.4
 Author:       Sharun John
-Author URI:   https://shaa.nz
+Author URI:   https://shaanz.com
 License:      GPLv3 or later
 License URI:  https://www.gnu.org/licenses/gpl-2.0.html
 */
@@ -25,26 +25,24 @@ if ( file_exists( dirname( __FILE__ ) . '/vendor/autoload.php' ) ) {
 }
 
 // Define CONSTANTS
-define( 'PLUGIN_PATH', plugin_dir_path( __FILE__ ) );
-define( 'PLUGIN_URL', plugin_dir_url( __FILE__ ) );
-define( 'PLUGIN', plugin_basename( __FILE__ ) );
+define( 'SHAANZ_VUE_PLUGIN_NAME', plugin_basename( __FILE__ ) );
 
-use Inc\Base\Activate;
-use Inc\Base\Deactivate;
-use Inc\Base\Enqueue;
+use Inc\Base\Shaanz_WP_Vue_Activate;
+use Inc\Base\Shaanz_WP_Vue_Deactivate;
+use Inc\Base\Shaanz_WP_Vue_Enqueue;
 
 
 // Plugin activation function
 function activate_shaanz_wp_vue_plugin()
 {
-    Activate::activate();
+    Shaanz_WP_Vue_Activate::activate();
 }
 
 
 // Plugin deactivation function
 function deactivate_shaanz_wp_vue_plugin()
 {
-    Deactivate::deactivate();
+    Shaanz_WP_Vue_Deactivate::deactivate();
 }
 
 // Plugin activation
@@ -57,9 +55,9 @@ register_deactivation_hook( __FILE__ , 'deactivate_shaanz_wp_vue_plugin' );
 /**
  * Initializing all the core classes of the plugin
  */
-if(class_exists( 'Inc\\Init' ) )
+if(class_exists( 'Inc\\Shaanz_WP_Vue_Init' ) )
 {
-    Inc\init::registerServices();
+    Inc\Shaanz_WP_Vue_Init::registerServices();
 }
 
 ?>
